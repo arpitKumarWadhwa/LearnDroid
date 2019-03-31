@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:scaleY="150px">
+
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/inetnts_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Intents"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/intents" />
+
+        <TextView
+            android:id="@+id/toast_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Toast"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toStartOf="@+id/inetnts_text"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toast" />
+
+        <TextView
+            android:id="@+id/manifest_text"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
+            android:text="Manifest"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/manifest" />
+
+        <ImageView
+            android:id="@+id/intents"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="84dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/toast"
+            app:srcCompat="@drawable/intent" />
+
+        <ImageView
+            android:id="@+id/toast"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="84dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/intents"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/manifest"
+            app:srcCompat="@drawable/toast" />
+
+        <ImageView
+            android:id="@+id/manifest"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="84dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/toast"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/manifest" />
+
+        <ImageView
+            android:id="@+id/activity_lifecycle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="55dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/intents"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/views"
+            app:srcCompat="@drawable/activity_lifecycle" />
+
+        <ImageView
+            android:id="@+id/views"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="55dp"
+            app:layout_constraintBottom_toTopOf="@+id/toast"
+            app:layout_constraintEnd_toStartOf="@+id/activity_lifecycle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/view_groups"
+            app:srcCompat="@drawable/view" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Learn Droid"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/views"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/view_groups"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="55dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/manifest"
+            app:layout_constraintEnd_toStartOf="@+id/views"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/view_group" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="112dp"
+            android:layout_marginLeft="118dp"
+            android:layout_marginRight="112dp"
+            android:layout_marginStart="118dp"
+            android:text="Devloped by Arpit Kumar and Pranav Piyush"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/activity_lifecycle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Activity Lifecycle"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/intents"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/view_group_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:text="View Group"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/manifest"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/views_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:text="View"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/toast"
+            app:layout_constraintEnd_toStartOf="@+id/activity_lifecycle"
+            app:layout_constraintHorizontal_bias="0.552"
+            app:layout_constraintStart_toEndOf="@+id/view_group_text" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

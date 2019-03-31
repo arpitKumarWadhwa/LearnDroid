@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#cae8ec"
+                android:text="Register NOW!"
+                android:textSize="40dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="74dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="37dp"
+                android:layout_marginRight="37dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="76dp"
+                android:background="#b4faac"
+                android:gravity="center"
+                android:text="NAME:"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:layout_alignLeft="@+id/t1"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/t1"
+                android:layout_marginTop="229dp"
+                android:background="#b4faac"
+                android:gravity="center"
+                android:text="PHONE:"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:layout_alignLeft="@+id/t1"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/t1"
+                android:layout_marginTop="128dp"
+                android:background="#b4faac"
+                android:gravity="center"
+                android:text="EMAIL:"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:layout_alignLeft="@+id/t1"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/t1"
+                android:layout_marginTop="180dp"
+                android:background="#b4faac"
+                android:gravity="center"
+                android:text="PASSWORD:"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="110dp"
+                android:layout_height="52dp"
+                android:layout_alignLeft="@+id/t1"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/t1"
+                android:layout_marginTop="344dp"
+                android:background="#b4faac"
+                android:gravity="center"
+                android:text="GENDER:"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="110dp"
+                android:layout_height="36dp"
+                android:layout_alignLeft="@+id/t1"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/t1"
+                android:layout_marginTop="283dp"
+                android:background="#b4faac"
+                android:gravity="center"
+                android:text="AGE:"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignBottom="@+id/t1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="19dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_alignLeft="@+id/editText"
+                android:layout_alignStart="@+id/editText"
+                android:layout_alignTop="@+id/t3"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignBottom="@+id/t4"
+                android:layout_alignLeft="@+id/editText"
+                android:layout_alignStart="@+id/editText"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="numberPassword" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/editText"
+                android:layout_alignStart="@+id/editText"
+                android:layout_alignTop="@+id/t2"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="phone" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/t5"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_red_dark"
+                    android:checked="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Male"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Female"
+                    android:textSize="18dp" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/editText"
+                android:layout_alignStart="@+id/editText"
+                android:layout_alignTop="@+id/t6"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="number" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:id="@+id/button"
+                android:text="REGISTER"
+                android:layout_below="@id/t5"
+                android:layout_marginTop="24dp"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
